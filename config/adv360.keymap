@@ -30,6 +30,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        BracketBrace {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <51 50>;
+        };
+
+        Grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <14 15>;
+        };
+
+        RightBracketBrace {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <65 64>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -70,6 +89,16 @@
 &none  &none         &none         &none         &none         &none         &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR  &none  &none  &none  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &none         &none         &none         &none         &none         &none
 &none  &none         &none         &none         &none         &none         &none                   &none       &none  &none  &none  &none       &none       &none                   &none         &none         &none         &none         &none         &none
 &none  &none         &none         &bl BL_INC    &bl BL_DEC                  &rgb_ug RGB_TOG         &bl BL_TOG  &none                &none       &bl BL_TOG  &rgb_ug RGB_TOG                       &bl BL_INC    &bl BL_DEC    &none         &none         &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
