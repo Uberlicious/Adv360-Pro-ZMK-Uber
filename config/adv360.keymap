@@ -54,18 +54,28 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1              &kp N2          &kp N3            &kp N4          &kp N5  &tog 0                                                                     &mo 2              &kp N6  &kp N7           &kp N8             &kp N9           &kp N0                       &kp MINUS
+&kp EQUAL  &kp N1              &kp N2          &kp N3            &kp N4          &kp N5  &tog 0                                                                     &mo 3              &kp N6  &kp N7           &kp N8             &kp N9           &kp N0                       &kp MINUS
 &kp TAB    &kp Q               &kp W           &kp E             &kp R           &kp T   &caps_word                                                                 &macro_ue_compile  &kp Y   &kp U            &kp I              &kp O            &kp P                        &kp BSLH
 &kp ESC    &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_WIN F  &kp G   &none       &kp LCTRL     &kp LALT  &none  &none  &kp LGUI   &kp RCTRL     &none              &kp H   &hm RIGHT_WIN J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_CONTROL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z               &kp X           &kp C             &kp V           &kp B   &none       &none         &kp HOME  &none  &none  &kp PG_UP  &none         &none              &kp N   &kp M            &kp COMMA          &kp DOT          &kp FSLH                     &kp RSHFT
-&mo 1      &kp GRAVE           &kp CAPS        &kp LEFT          &kp RIGHT               &kp SPACE   &lt 1 RETURN  &kp END                 &kp PG_DN  &lt 1 DELETE  &kp BACKSPACE              &kp UP           &kp DOWN           &kp LBKT         &kp RBKT                     &mo 1
+&mo 2      &kp GRAVE           &kp CAPS        &kp LEFT          &kp RIGHT               &kp SPACE   &lt 2 RETURN  &kp END                 &kp PG_DN  &lt 2 DELETE  &kp BACKSPACE              &kp UP           &kp DOWN           &kp LBKT         &kp RBKT                     &mo 2
+            >;
+        };
+
+        Mac {
+            bindings = <
+&trans  &trans          &trans  &trans  &trans       &trans  &trans                                                  &trans  &trans  &trans       &trans  &trans  &trans                   &trans
+&trans  &trans          &trans  &trans  &trans       &trans  &trans                                                  &trans  &trans  &trans       &trans  &trans  &trans                   &trans
+&trans  &hm LEFT_WIN A  &trans  &trans  &hm LCTRL F  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &hm RCTRL J  &trans  &trans  &hm RIGHT_WIN SEMICOLON  &trans
+&trans  &trans          &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans                   &trans
+&trans  &trans          &trans  &trans  &trans               &trans  &trans  &trans                  &trans  &trans  &trans          &trans       &trans  &trans  &trans                   &trans
             >;
         };
 
         Symbols {
             bindings = <
-&kp C_PP  &trans  &kp F10  &kp F11  &kp F12  &trans  &trans                                                &trans  &kp LC(LG(LS(NUMBER_4)))  &kp K_BACK      &kp K_PLAY_PAUSE  &kp K_FORWARD  &trans        &kp C_RECORD
-&trans    &trans  &kp F7   &kp F8   &kp F9   &trans  &none                                                 &none   &trans                    &kp C_VOL_DN    &kp C_VOLUME_UP   &kp K_MUTE     &trans        &trans
+&kp C_PP  &trans  &kp F10  &kp F11  &kp F12  &to 0   &trans                                                &trans  &kp LC(LG(LS(NUMBER_4)))  &kp K_BACK      &kp K_PLAY_PAUSE  &kp K_FORWARD  &trans        &kp C_RECORD
+&trans    &trans  &kp F7   &kp F8   &kp F9   &to 1   &none                                                 &none   &trans                    &kp C_VOL_DN    &kp C_VOLUME_UP   &kp K_MUTE     &trans        &trans
 &trans    &trans  &kp F4   &kp F5   &kp F6   &trans  &none   &trans  &trans  &none  &none  &trans  &trans  &none   &kp LEFT                  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT      &caps_word    &trans
 &trans    &trans  &kp F1   &kp F2   &kp F3   &trans  &none   &none   &trans  &none  &none  &trans  &none   &none   &kp PAGE_UP               &kp PAGE_DOWN   &kp HOME          &kp END        &kp CAPSLOCK  &trans
 &trans    &trans  &trans   &trans   &trans           &trans  &trans  &trans                &trans  &trans  &trans                            &trans          &trans            &trans         &trans        &trans
